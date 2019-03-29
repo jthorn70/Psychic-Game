@@ -1,4 +1,4 @@
-var computerChoices = [" a"," b"," c"," d"," e"," f"," g"," h"," i"," j"," k"," l"," m"," n"," o"," p"," q"," r"," s"," t"," u"," v"," w"," x"," y"," z"]
+var computerChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 var wins = 0
 var losses = 0
 var chances = 5
@@ -22,6 +22,7 @@ document.onkeyup = function()
         wins++
         chances = 5
         guesses.push(userGuess)
+        alert ("Congrats! you picked the right letter!")
     } else{
         chances--
         guesses.push(userGuess)
@@ -42,5 +43,7 @@ document.onkeyup = function()
     chances = 5
     guesses = []
 }
+
+
 }
 
